@@ -1,20 +1,18 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>Blue Heron Digital</title>
-<style>
-	body {
-		background-color: #0C3B8A;
-	}
-	h1, p {
-		color: #82A5E0;
-	}
-</style>
-</head>
-<body>
+---
+layout: default
+title: Site Title
+---
 
-<h1>Blue Heron Digital</h1>
-<p>Updated website coming this fall!</p>
+<div id="home">
 
-</body>
-</html>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam cum at, maiores, voluptatum nulla quibusdam accusantium! Dolorem, at, a voluptatem harum id dolores cupiditate ut impedit, minima veniam debitis, eos.</p>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti voluptatum officiis, modi, ratione ducimus qui repellendus natus officia hic provident corporis eligendi nisi dolorem quibusdam commodi doloribus voluptate cum quasi.</p>
+
+  <h1>Blog Posts</h1>
+  <ul class="posts">
+    {% for post in site.posts %}
+      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
+</div>
