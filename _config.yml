@@ -1,4 +1,4 @@
-name: Bloop
-markdown: redcarpet
-highlighter: pygments # or rouge or null
+name: Jekyll Boilerplate
+markdown: kramdown
+highlighter: rouge # or pygments or null
 exclude: ["node_modules", "gulpfile.js", "package.json"]
